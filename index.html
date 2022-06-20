@@ -1,0 +1,47 @@
+<html>
+<head>
+	
+<script src="calculator.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<!-- create table -->
+<body>
+	<div class = title >Calculator Yana</div>
+	<table border="1">
+		<tr>
+			<td colspan="3"><input disabled type="text" id="display"/></td>
+			<td><img src="nedladdning.jpg" alt="" class="flower"></td>
+
+		</tr>
+		<tr>
+			<!-- create button and assign value to each button -->
+			<!-- dis("1") will call function dis to display value -->
+			<td><input type="button" value="1" onclick="print('1')"/> </td>
+			<td><input type="button" value="2" onclick="print('2')"/> </td>
+			<td><input type="button" value="3" onclick="print('3')"/> </td>
+			<td><input type="button" value="/" onclick="print('/')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="print('4')"/> </td>
+			<td><input type="button" value="5" onclick="print('5')"/> </td>
+			<td><input type="button" value="6" onclick="print('6')"/> </td>
+			<td><input type="button" value="-" onclick="print('-')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onclick="print('7')"/> </td>
+			<td><input type="button" value="8" onclick="print('8')"/> </td>
+			<td><input type="button" value="9" onclick="print('9')"/> </td>
+			<td><input type="button" value="+" onclick="print('+')"/> </td>
+		</tr>
+		<tr>
+			<!-- clean() function will call clean to clear all value -->
+			<td><input type="button" value="c" onclick="clean()"/> </td>
+			<td><input type="button" value="0" onclick="print('0')"/> </td>
+			<!-- solve function call function solve to evaluate value -->
+			<td><input type="button" value="=" onclick="calculate()"/> </td>
+			<td><input type="button" value="*" onclick="print('*')"/> </td>
+		</tr>
+	</table>
+</body>
+</html>
